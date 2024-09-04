@@ -75,11 +75,8 @@ More detailed instructions on how to set up LoFtee are [here](https://github.com
 1. You must clone LoFtee repository into your local `vep_cache` directory:
    ```
    cd vep_cache
-   git clone https://github.com/konradjk/loftee.git loftee_GRCh37
-   git clone https://github.com/konradjk/loftee.git loftee_GRCh38
-   cd loftee_GRCh38
-   git checkout grch38
-   cd ..
+   git clone -b master https://github.com/konradjk/loftee.git loftee_GRCh37
+   git clone -b grch38 https://github.com/konradjk/loftee.git loftee_GRCh38
    ```
    
 2. Download all necessary databases (based on human genome build you plan to use) as described [here](https://github.com/konradjk/loftee) into your `vep_cache` directory into folders `loftee_db_GRCh37` and `loftee_db_GRCh38`. These should include: GERP conservation scores (only for GRCh38), human_ancestor.fa files, SQL databases with PhyloCSF metrics (SQL files must be unzipped).
